@@ -68,26 +68,6 @@ const Header = () => {
 
         {/* Links */}
         <div className="flex items-center gap-8">
-          <motion.ul
-            initial={{ opacity: 0, x: 200 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 200 }}
-            className="flex items-center gap-8"
-          >
-            <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all cursor-pointer ease-in-out">
-              Home
-            </li>
-            <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all cursor-pointer ease-in-out">
-              Menu
-            </li>
-            <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all cursor-pointer ease-in-out">
-              About Us
-            </li>
-            <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all cursor-pointer ease-in-out">
-              Service
-            </li>
-          </motion.ul>
-
           {/* Cart */}
           <div
             className="relative flex items-center justify-center"
@@ -187,33 +167,6 @@ const Header = () => {
                   </p>
                 </Link>
               )}
-
-              <ul className="flex flex-col ">
-                <li
-                  className="text-base text-textColor hover:text-headingColor duration-100 transition-all cursor-pointer ease-in-out px-4 py-2 hover:bg-slate-100"
-                  onClick={hideMenuHandler}
-                >
-                  Home
-                </li>
-                <li
-                  className="text-base text-textColor hover:text-headingColor duration-100 transition-all cursor-pointer ease-in-out px-4 py-2 hover:bg-slate-100"
-                  onClick={hideMenuHandler}
-                >
-                  Menu
-                </li>
-                <li
-                  className="text-base text-textColor hover:text-headingColor duration-100 transition-all cursor-pointer ease-in-out px-4 py-2 hover:bg-slate-100"
-                  onClick={hideMenuHandler}
-                >
-                  About Us
-                </li>
-                <li
-                  className="text-base text-textColor hover:text-headingColor duration-100 transition-all cursor-pointer ease-in-out px-4 py-2 hover:bg-slate-100"
-                  onClick={hideMenuHandler}
-                >
-                  Service
-                </li>
-              </ul>
 
               <p
                 className="px-4 py-2 flex items-center gap-3 cursor-pointer bg-gray-200 hover:bg-slate-300 transition-all duration-100 ease-in-out text-textColor text-base2"
